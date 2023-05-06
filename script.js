@@ -345,25 +345,25 @@ const Tools = () => {
 const Restaurants = () => {
     const getRestaurants = () => {
         return [{
-                desc: "The best burgers in town",
+                desc: "The best biryani in town",
                 id: 1,
-                image: "https://images.unsplash.com/photo-1606131731446-5568d87113aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Burgers"
+                image: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                title: "Biryani"
             }, {
-                desc: "The worst ice-cream around",
+                desc: "The best bengali food around",
                 id: 2,
-                image: "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Ice Cream"
+                image: "https://images.unsplash.com/photo-1654863404432-cac67587e25d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                title: "Bengali Cuisine"
             }, {
-                desc: "This 'Za be gettin down",
+                desc: "Punjabi Dishes",
                 id: 3,
-                image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Pizza"
+                image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                title: "Butter Chicken"
             }, {
-                desc: "BBQ ain't need no rhyme",
+                desc: "KFC ain't need no rhyme",
                 id: 4,
-                image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFyYmVxdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "BBQ"
+                image: "https://images.unsplash.com/photo-1644032982093-b4a7b38935ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                title: "KFC"
             }].map((restaurant) => {
             const styles = {
                 backgroundImage: `url(${restaurant.image})`
@@ -438,9 +438,9 @@ const Menu = () => {
                     React.createElement("div", { className: "app-menu-content-header-section" },
                         React.createElement(UserStatusButton, { icon: "fa-solid fa-arrow-right-from-arc", id: "sign-out-button", userStatus: UserStatus.LoggedOut }))),
                 React.createElement(QuickNav, null),
-                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "https://www.youtube.com/c/Hyperplexed?sub_confirmation=1", target: "_blank" },
-                    React.createElement("i", { className: "fa-brands fa-youtube" }),
-                    React.createElement("span", null, "Hyperplexed")),
+                React.createElement("a", { id: "github-link", className: "clear-button", href: "https://github.com/nibedann", target: "_blank" },
+                    React.createElement("i", { className: "fa-brands fa-square-github" }),
+                    React.createElement("span", null, "nibedann")),
                 React.createElement(Weather, null),
                 React.createElement(Restaurants, null),
                 React.createElement(Tools, null),
