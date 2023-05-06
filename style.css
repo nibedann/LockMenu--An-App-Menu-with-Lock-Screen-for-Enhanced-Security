@@ -500,7 +500,7 @@
     gap: 1em;
   }
   #app #movies-section .menu-section-content #movie-card-1 .movie-card-content {
-    background: linear-gradient(to top, rgba(57, 73, 171, 0.4), transparent, rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to top, rgba(244, 63, 108, 0.4), transparent, rgba(0, 0, 0, 0.4));
   }
   #app #movies-section .menu-section-content #movie-card-2 .movie-card-content {
     background: linear-gradient(to top, rgba(103, 58, 183, 0.4), transparent, rgba(0, 0, 0, 0.4));

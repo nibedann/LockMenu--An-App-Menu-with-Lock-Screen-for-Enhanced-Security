@@ -380,29 +380,29 @@ const Restaurants = () => {
 const Movies = () => {
     const getMovies = () => {
         return [{
-                desc: "A tale of some people watching over a large portion of space.",
+                desc: "When Tony Stark, an industrialist, is captured, he constructs a high-tech armoured suit to escape.",
                 id: 1,
                 icon: "fa-solid fa-galaxy",
-                image: "https://images.unsplash.com/photo-1596727147705-61a532a659bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Protectors of the Milky Way"
+                image: "https://cdn.pixabay.com/photo/2021/07/20/14/59/iron-man-6480952_960_720.jpg",
+                title: "Iron Man"
             }, {
-                desc: "Some people leave their holes to disrupt some things.",
+                desc: "Peter Parker, the beloved superhero Spider-Man, faces four destructive elemental monsters while on holiday in Europe.",
                 id: 2,
                 icon: "fa-solid fa-hat-wizard",
-                image: "https://images.unsplash.com/photo-1535666669445-e8c15cd2e7d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9yZCUyMG9mJTIwdGhlJTIwcmluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Hole People"
+                image: "https://cdn.pixabay.com/photo/2022/06/20/11/34/spiderman-7273540_960_720.jpg",
+                title: "Spider-Man: Far From Home"
             }, {
-                desc: "A boy with a dent in his head tries to stop a bad guy. And by bad I mean bad at winning.",
+                desc: "Thor is exiled by his father, Odin, the King of Asgard, to the Earth to live among mortals.",
                 id: 3,
                 icon: "fa-solid fa-broom-ball",
-                image: "https://images.unsplash.com/photo-1632266484284-a11d9e3a460a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Pot of Hair"
+                image: "https://cdn.pixabay.com/photo/2020/12/25/08/14/thor-5858835_960_720.jpg",
+                title: "Thor"
             }, {
-                desc: "A long drawn out story of some people fighting over some space. Cuz there isn't enough of it.",
+                desc: "Thanos, an intergalactic warlord, disintegrates half of the universe.",
                 id: 4,
                 icon: "fa-solid fa-starship-freighter",
-                image: "https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMHdhcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Area Fights"
+                image: "https://cdn.pixabay.com/photo/2019/05/10/18/21/thanos-4194122_960_720.png",
+                title: "Avengers: Endgame"
             }].map((movie) => {
             const styles = {
                 backgroundImage: `url(${movie.image})`
@@ -417,7 +417,7 @@ const Movies = () => {
                     React.createElement("i", { className: movie.icon }))));
         });
     };
-    return (React.createElement(MenuSection, { icon: "fa-solid fa-camera-movie", id: "movies-section", scrollable: true, title: "Popcorn time!" }, getMovies()));
+    return (React.createElement(MenuSection, { icon: "fa-solid fa-camera-movie", id: "movies-section", scrollable: true, title: "Movie time!" }, getMovies()));
 };
 const UserStatusButton = (props) => {
     const { userStatus, setUserStatusTo } = React.useContext(AppContext);
