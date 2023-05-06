@@ -91,19 +91,19 @@ const ScrollableComponent = (props) => {
     return (React.createElement("div", { ref: ref, className: classNames("scrollable-component", props.className), id: props.id, onMouseDown: handleOnMouseDown, onMouseMove: handleOnMouseMove, onMouseUp: handleOnMouseUp, onMouseLeave: handleOnMouseUp }, props.children));
 };
 const WeatherSnap = () => {
-    const [temperature] = React.useState(N.rand(65, 85));
+    const [temperature] = React.useState(N.rand(30, 40));
     return (React.createElement("span", { className: "weather" },
         React.createElement("i", { className: "weather-type", className: "fa-duotone fa-sun" }),
         React.createElement("span", { className: "weather-temperature-value" }, temperature),
-        React.createElement("span", { className: "weather-temperature-unit" }, "\u00B0F")));
+        React.createElement("span", { className: "weather-temperature-unit" }, "\u00B0C")));
 };
 const Reminder = () => {
     return (React.createElement("div", { className: "reminder" },
         React.createElement("div", { className: "reminder-icon" },
             React.createElement("i", { className: "fa-regular fa-bell" })),
         React.createElement("span", { className: "reminder-text" },
-            "Extra cool people meeting ",
-            React.createElement("span", { className: "reminder-time" }, "10AM"))));
+            "Get your job done ",
+            React.createElement("span", { className: "reminder-time" }, "9AM"))));
 };
 const Time = () => {
     const date = useCurrentDateEffect();
@@ -233,37 +233,37 @@ const Weather = () => {
         return [{
                 id: 1,
                 name: "Mon",
-                temperature: N.rand(60, 80),
+                temperature: N.rand(30, 40),
                 weather: WeatherType.Sunny
             }, {
                 id: 2,
                 name: "Tues",
-                temperature: N.rand(60, 80),
+                temperature: N.rand(30, 40),
                 weather: WeatherType.Sunny
             }, {
                 id: 3,
                 name: "Wed",
-                temperature: N.rand(60, 80),
+                temperature: N.rand(30, 38),
                 weather: WeatherType.Cloudy
             }, {
                 id: 4,
                 name: "Thurs",
-                temperature: N.rand(60, 80),
+                temperature: N.rand(28, 35),
                 weather: WeatherType.Rainy
             }, {
                 id: 5,
                 name: "Fri",
-                temperature: N.rand(60, 80),
+                temperature: N.rand(27, 36),
                 weather: WeatherType.Stormy
             }, {
                 id: 6,
                 name: "Sat",
-                temperature: N.rand(60, 80),
+                temperature: N.rand(32, 38),
                 weather: WeatherType.Sunny
             }, {
                 id: 7,
                 name: "Sun",
-                temperature: N.rand(60, 80),
+                temperature: N.rand(29, 35),
                 weather: WeatherType.Cloudy
             }].map((day) => {
             const getIcon = () => {
@@ -282,7 +282,7 @@ const Weather = () => {
                 React.createElement("div", { className: "day-card-content" },
                     React.createElement("span", { className: "day-weather-temperature" },
                         day.temperature,
-                        React.createElement("span", { className: "day-weather-temperature-unit" }, "\u00B0F")),
+                        React.createElement("span", { className: "day-weather-temperature-unit" }, "\u00B0C")),
                     React.createElement("i", { className: classNames("day-weather-icon", getIcon(), day.weather.toLowerCase()) }),
                     React.createElement("span", { className: "day-name" }, day.name))));
         });
@@ -294,39 +294,39 @@ const Tools = () => {
         return [{
                 icon: "fa-solid fa-cloud-sun",
                 id: 1,
-                image: "https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHdlYXRoZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                image: "https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
                 label: "Weather",
                 name: "Cloudly"
             }, {
                 icon: "fa-solid fa-calculator-simple",
                 id: 2,
-                image: "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FsY3VsYXRvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-                label: "Calc",
-                name: "Mathio"
+                image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                label: "Music",
+                name: "Spotify"
             }, {
                 icon: "fa-solid fa-piggy-bank",
                 id: 3,
-                image: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFua3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                image: "https://images.unsplash.com/photo-1616077167555-51f6bc516dfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
                 label: "Bank",
-                name: "Cashy"
+                name: "Cashapp"
             }, {
                 icon: "fa-solid fa-plane",
                 id: 4,
-                image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWlycGxhbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                image: "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
                 label: "Travel",
-                name: "Fly-er-io-ly"
+                name: "Airbnb"
             }, {
                 icon: "fa-solid fa-gamepad-modern",
                 id: 5,
                 image: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dmlkZW8lMjBnYW1lc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
                 label: "Games",
-                name: "Gamey"
+                name: "Steam"
             }, {
                 icon: "fa-solid fa-video",
                 id: 6,
-                image: "https://images.unsplash.com/photo-1578022761797-b8636ac1773c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHZpZGVvJTIwY2hhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-                label: "Video Chat",
-                name: "Chatty"
+                image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+                label: "Social Media",
+                name: "Instagram"
             }].map((tool) => {
             const styles = {
                 backgroundImage: `url(${tool.image})`
@@ -340,7 +340,7 @@ const Tools = () => {
                     React.createElement("i", { className: classNames(tool.icon, "tool-card-icon") }))));
         });
     };
-    return (React.createElement(MenuSection, { icon: "fa-solid fa-toolbox", id: "tools-section", title: "What's Appening?" }, getTools()));
+    return (React.createElement(MenuSection, { icon: "fa-solid fa-toolbox", id: "tools-section", title: "What's Happening?" }, getTools()));
 };
 const Restaurants = () => {
     const getRestaurants = () => {
