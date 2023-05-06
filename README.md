@@ -9,7 +9,7 @@ To use LockMenu, users must first authenticate themselves by entering the correc
 LockMenu provides an additional layer of security for web applications, especially those that handle sensitive information. It is customizable and can be easily integrated into any JavaScript-based website.
 
 
-## technologies used
+## Technologies used
 * HTML
 * CSS
 * JavaScript
